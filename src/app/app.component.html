@@ -1,0 +1,10 @@
+<div class="columns">
+  
+  <app-column-color (ddd)="deleteColor($event)" *ngFor="let in of dataColors; index as i" [indexColor]="i"></app-column-color>
+  
+  <!-- <button #addButton (click)="addColor()">
+    <div>+</div>
+  </button> -->
+  <app-buttons-colunm (eventAddColor)="addColor()"></app-buttons-colunm>
+
+</div>

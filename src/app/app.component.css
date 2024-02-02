@@ -1,0 +1,29 @@
+.columns {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+}
+app-column-color {
+    flex: 1;
+}
+
+button {
+    flex: 1;
+}
+button div {
+    font-family: Georgia;
+    margin: auto;
+    border: 5px solid red;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    line-height: 80px;
+    font-size: 80px;
+    color: red;
+}
+
+app-buttons-colunm {
+    flex: 1;
+}

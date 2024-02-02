@@ -1,0 +1,18 @@
+<div class="col" [style.background]="color">
+    <div class="colorText">
+        <h2 [style.color]="textColor" (click)="copyTextColor()">{{color}}</h2>
+        <button>
+            <i class="fa-solid fa-pencil" [style.color]="textColor"></i>
+        </button>
+    </div>
+
+    <button #buttonLock (click)="openLosk()"><i [style.color]="textColor" [ngClass]="{
+            'fa-lock-open': isOpenLock,
+            'fa-lock': !isOpenLock
+        }" class="fa-solid"></i></button>
+        
+
+    <button #buttonDelete (click)="deleteColor()">
+        <i [style.color]="textColor" class="fa-solid fa-trash"></i>
+    </button>
+</div>
